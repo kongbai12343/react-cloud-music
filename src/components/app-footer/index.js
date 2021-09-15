@@ -68,7 +68,7 @@ export default memo(function AppFooter() {
             footerImages.map((item, index) => {
               return (
                 <li key={item.link} className="item">
-                  <a href={item.link} className="link" rel="noopener noreferrer" target="_blank"></a>
+                  <a href={item.link} className="link" rel="noopener noreferrer" target="_blank">sdsd</a>
                   <span className="title"></span>
                 </li>
               )

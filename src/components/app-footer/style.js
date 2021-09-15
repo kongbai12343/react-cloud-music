@@ -4,8 +4,9 @@ export const FooterWrapper = styled.div`
   height: 172px;
   background: #f2f2f2;
   border: 1px solid #b3b3b3;
+  color: #666;
+
   .content {
-    margin-top: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -15,6 +16,7 @@ export const FooterWrapper = styled.div`
 export const FooterLeft = styled.div`
   padding-top: 15px;
   line-height: 24px;
+
  .link {
     a {
       color: #999;
@@ -24,9 +26,10 @@ export const FooterLeft = styled.div`
       margin: 0 8px 0 10px;
     }
   }
+
   .copyright {
     color: #666;
-    & span:first-child{
+    span{
       margin-right: 14px;
     }
   }
@@ -40,10 +43,9 @@ export const FooterRight = styled.ul`
   display: flex;
 
   .item {
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
-    width: 60px;
-    height: 70px;
     align-items: center;
     margin-right: 40px;
     
@@ -53,7 +55,9 @@ export const FooterRight = styled.ul`
       height: 45px;
       background-image: url(${require("@/assets/img/sprite_footer_02.png").default});
       background-size: 110px 450px;
+      text-indent: -9999px;
     }
+
     :nth-child(1) .link {
         background-position: -60px -101px;
       }
@@ -66,12 +70,14 @@ export const FooterRight = styled.ul`
       :nth-child(4) .link {
         background-position: 0 -101px;
       }
+
       .title {
         background-image: url(${require("@/assets/img/sprite_footer_01.png").default});
         width: 52px;
         height: 14px;
         background-size: 180px 100px;
       }
+
       :nth-child(1) .title {
         background-position: -1px -86px;
       }
