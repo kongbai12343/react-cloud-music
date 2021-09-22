@@ -5,9 +5,10 @@ import { Provider } from 'react-redux'
 import routes from './router';
 import store from './store'
 
+import { HashRouter } from 'react-router-dom';
 import AppHeader from '@/components/app-header';
 import AppFooter from '@/components/app-footer';
-import { HashRouter } from 'react-router-dom';
+import AppPlayerBar from './pages/player/app-player-bar';
 
 export default memo(function App() {
   return (
@@ -17,6 +18,7 @@ export default memo(function App() {
         <AppHeader />
         {renderRoutes(routes)}
         <AppFooter />
+        <AppPlayerBar />
       </HashRouter>
     </Provider>
   )

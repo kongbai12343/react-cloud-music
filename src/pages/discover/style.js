@@ -2,10 +2,9 @@ import styled from 'styled-components'
 
 
 export const DiscoverWrapper = styled.div`
-  /* height: 35px; */
-  background-color: #C20C0C;
   .top {
     height: 35px;
+    background-color: #C20C0C;
   }
 `
 

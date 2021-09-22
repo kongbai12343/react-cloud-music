@@ -1,13 +1,30 @@
 import React, { memo } from 'react'
 
 import Bannner from './c-cpns/banner';
-import { RecommendWrapper } from './style'
+import HotRecommend from './c-cpns/hot-recommend';
+import NewAlbum from './c-cpns/new-album';
+import RecommendRanking from './c-cpns/recommend-ranking';
+
+import {
+  RecommendWrapper,
+  Content,
+  RecommendLeft,
+  RecommendRight
+} from './style'
 
 
 function Recommend(props) {
   return (
     <RecommendWrapper>
       <Bannner />
+      <Content className="wrap-v2">
+        <RecommendLeft>
+          <HotRecommend />
+          <NewAlbum />
+          <RecommendRanking />
+        </RecommendLeft>
+        <RecommendRight></RecommendRight>
+      </Content>
     </RecommendWrapper>
   )
 }

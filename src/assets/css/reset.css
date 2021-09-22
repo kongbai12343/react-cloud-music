@@ -126,7 +126,8 @@ body, textarea, select, input, button {
   transform: translateX(-50%);
   bottom: 60px;
   background-color: rgba(0, 0, 0, .5);
-  color: #fff;
+  color:#47b4bb;
+  font-size: 16px;
 }
 
 span:hover.link {
